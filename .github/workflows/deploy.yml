@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DEPLOY_TARGET: github-pages
+      GITHUB_PAGES_USE_BASE_PATH: "false"
+      GITHUB_PAGES_CUSTOM_DOMAIN: newen.solutions
 
     steps:
       - name: Checkout
@@ -39,6 +43,9 @@ jobs:
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
+
+      - name: Set custom domain
+        run: echo "$GITHUB_PAGES_CUSTOM_DOMAIN" > out/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
