@@ -15,9 +15,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Newen | Consultoria y desarrollo de software",
+  title: "Newen Solutions",
   description:
     "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  icons: {
+    icon: [
+      { url: "/assets/logo-oscura.png" },
+      { url: "/assets/logo-oscura.png", rel: "apple-touch-icon" },
+    ],
+  },
+  openGraph: {
+    title: "Newen Solutions",
+    description:
+      "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
+    images: ["/assets/logo-oscura.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Newen Solutions",
+    description:
+      "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
+    images: ["/assets/logo-oscura.png"],
+  },
 };
 
 export default function RootLayout({
