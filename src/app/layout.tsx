@@ -20,21 +20,21 @@ export const metadata: Metadata = {
     "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   icons: {
-    icon: "/assets/logo-oscura.png?v=2",
-    apple: "/assets/logo-oscura.png?v=2",
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     title: "Newen | Consultoría y desarrollo de software",
     description:
       "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
-    images: ["/assets/logo-oscura.png"],
+    images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Newen | Consultoría y desarrollo de software",
     description:
       "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
-    images: ["/assets/logo-oscura.png"],
+    images: ["/opengraph-image.png"],
   },
 };
 
