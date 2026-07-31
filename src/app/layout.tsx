@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Newen Solutions",
+  title: "Newen | Consultoría y desarrollo de software",
   description:
     "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Newen Solutions",
+    title: "Newen | Consultoría y desarrollo de software",
     description:
       "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
     images: ["/assets/logo-oscura.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Newen Solutions",
+    title: "Newen | Consultoría y desarrollo de software",
     description:
       "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
     images: ["/assets/logo-oscura.png"],
