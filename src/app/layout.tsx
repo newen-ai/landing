@@ -20,10 +20,8 @@ export const metadata: Metadata = {
     "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   icons: {
-    icon: [
-      { url: "/assets/logo-oscura.png" },
-      { url: "/assets/logo-oscura.png", rel: "apple-touch-icon" },
-    ],
+    icon: "/assets/logo-oscura.png?v=2",
+    apple: "/assets/logo-oscura.png?v=2",
   },
   openGraph: {
     title: "Newen | Consultoría y desarrollo de software",
