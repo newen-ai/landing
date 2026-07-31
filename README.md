@@ -11,6 +11,12 @@ npm install
 npm run dev
 ```
 
+`npm run dev` uses webpack mode for stability. If you want to test Turbopack explicitly, run:
+
+```bash
+npm run dev:turbo
+```
+
 ## GitHub Pages deployment (`main` branch)
 
 This repository is configured to deploy automatically to GitHub Pages using GitHub Actions.

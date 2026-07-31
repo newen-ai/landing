@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Sora, Source_Sans_3 } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({
-  variable: "--font-brand",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["600", "700"],
 });
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-body",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
-  title: "Synergy AI | Intelligent Growth Infrastructure",
+  title: "Newen | Consultoria y desarrollo de software",
   description:
-    "Synergy AI helps teams align strategy, execution, and growth with AI-powered workflows.",
+    "Consultoria empresarial, desarrollo de software, ERP e integracion de inteligencia artificial.",
 };
 
 export default function RootLayout({
@@ -26,11 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${sora.variable} ${sourceSans.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="es" className={`${montserrat.variable} ${inter.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
